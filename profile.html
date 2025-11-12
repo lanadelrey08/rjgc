@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 用户信息卡片 -->
+        <div class="profile-header">
+            <div class="avatar">
+                <img src="https://via.placeholder.com/80" alt="头像">
+            </div>
+            <div class="user-info">
+                <h2 id="username">用户名</h2>
+                <button class="btn-edit" onclick="editProfile()">编辑</button>
+            </div>
+        </div>
+
+        <!-- 标签页 -->
+        <div class="profile-tabs">
+            <button class="tab active" data-tab="interested">我的想去</button>
+            <button class="tab" data-tab="published">我发布的活动</button>
+        </div>
+
+        <!-- 活动列表 -->
+        <div class="profile-content">
+            <div id="interestedEvents" class="tab-content active">
+                <!-- 动态加载想去的活动 -->
+            </div>
+            <div id="publishedEvents" class="tab-content">
+                <!-- 动态加载发布的活动 -->
+            </div>
+        </div>
+
+        <!-- 底部导航 -->
+        <nav class="bottom-nav">
+            <a href="index.html" class="nav-item">
+                <span class="nav-icon">🏠</span>
+                <span>首页</span>
+            </a>
+            <a href="discover.html" class="nav-item">
+                <span class="nav-icon">📅</span>
+                <span>发现</span>
+            </a>
+            <a href="messages.html" class="nav-item">
+                <span class="nav-icon">💬</span>
+                <span>消息</span>
+            </a>
+            <a href="profile.html" class="nav-item active">
+                <span class="nav-icon">👤</span>
+                <span>我的</span>
+            </a>
+        </nav>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
