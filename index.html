@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校园活动通</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 顶部导航 -->
+        <header class="header">
+            <h1>校园活动通</h1>
+            <div class="header-actions">
+                <button class="icon-btn" onclick="location.href='index.html'">⋯</button>
+                <button class="icon-btn" onclick="showSearch()">🔍</button>
+            </div>
+        </header>
+
+        <!-- 搜索框 -->
+        <div class="search-box" id="searchBox" style="display:none;">
+            <input type="text" placeholder="搜索活动" id="searchInput">
+        </div>
+
+        <!-- 分类标签 -->
+        <div class="category-tabs">
+            <button class="tab active" data-category="all">全部</button>
+            <button class="tab" data-category="学术讲座">学术讲座</button>
+            <button class="tab" data-category="社团招新">社团招新</button>
+            <button class="tab" data-category="文体娱乐">文体娱乐</button>
+        </div>
+
+        <!-- 活动列表 -->
+        <div class="event-list" id="eventList">
+            <!-- 动态加载 -->
+        </div>
+
+        <!-- 底部导航 -->
+        <nav class="bottom-nav">
+            <a href="index.html" class="nav-item active">
+                <span class="nav-icon">🏠</span>
+                <span>首页</span>
+            </a>
+            <a href="discover.html" class="nav-item">
+                <span class="nav-icon">📅</span>
+                <span>发现</span>
+            </a>
+            <a href="messages.html" class="nav-item">
+                <span class="nav-icon">💬</span>
+                <span>消息</span>
+            </a>
+            <a href="profile.html" class="nav-item">
+                <span class="nav-icon">👤</span>
+                <span>我的</span>
+            </a>
+        </nav>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
